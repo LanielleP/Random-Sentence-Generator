@@ -8,7 +8,7 @@ public class Test
     System.out.println("test");
     String[] hello = new String[5];
 
-    hello[0] = "LMAO";
+    hello[0] = ":)";
     System.out.println(hello[0]);
   }
 }
