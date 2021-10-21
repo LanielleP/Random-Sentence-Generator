@@ -1,10 +1,25 @@
 import java.util.*;
+import java.io.IOException;//for file issues
+import java.io.File;//used to read file
+import java.io.FileWriter;//used to save file
 
 public class PlanB
 {
-  public static void main(String[] args)
+  public static void main(/*String[] args*/)
   {
+    String file = "nouns.txt";
     System.out.println("test");
+    try
+    {
+      Scanner fileReader = new Scanner(new File(file));
+      String word;
+      for(int i=0;i<(Math.random()*607+1);i++)
+      {
+        word = fileReader.nextLine();
+      }
+      System.out.println(word);
+    } catch (IOException e){}
+
   }
 }
 
