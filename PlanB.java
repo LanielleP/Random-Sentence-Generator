@@ -27,7 +27,13 @@ public class PlanB
 //https://replit.com/@jajoosam/quote-scraper-starter
 
 /* 
-STEP 1: pull info from a website
+STEP 1: pull info from a website --
+
 STEP 2: make a complete sentence
+      2a - Randomize structure purpose (i.e. Statements, Questions, Exclamations) 
+      2b - Simple Sentence Structure (i.e. Independent Clause, Object, Modifier (aka Subject Verb (maybe Direct Object)))
+      2c - Complex Sentence Structure (i.e. Dependent clause, Independent Clause (Combine two sentences with commas))
+      2d - Semi-colons.
+
 STEP 3: make a story
 */
