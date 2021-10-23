@@ -39,7 +39,7 @@ public class PlanB
     String sentence = "";
     sentence += fullNoun(getWord(articles),getWord(nouns), "subject")+" ";
     sentence += fullVerb(getWord(verbs));
-    //sentence += fullVerb("convey");
+    //sentence += fullVerb("speak");
 
     if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.5)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
 
