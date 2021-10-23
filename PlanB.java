@@ -84,7 +84,7 @@ public class PlanB
   private static String fullVerb(String v)
   {
     String result = v.substring(0,v.length()-1);
-    if(v.substring(v.length()-1).equals("y")) result+="ies";
+    if(v.substring(v.length()-1).equals("y")&&!v.equals("convey")) result+="ies";
     else if(v.substring(v.length()-1).equals("s")) result+="es";
     else result+=v.substring(v.length()-1)+"s";
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
