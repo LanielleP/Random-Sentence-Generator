@@ -39,9 +39,9 @@ public class PlanB
     String sentence = "";
     sentence += fullNoun(getWord(articles),getWord(nouns), "subject")+" ";
     sentence += fullVerb(getWord(verbs));
-    //sentence += fullVerb("frown");
+    //sentence += fullVerb("speak");
 
-    if(sentence.substring(sentence.length()-2).equals("at") || Math.random()>0.5)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
+    if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.5)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
 
     return formatSentence(sentence);
   }//builds a sentence
@@ -89,6 +89,7 @@ public class PlanB
     else result+=v.substring(v.length()-1)+"s";
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
     if (v.equals("frown"))result+=" at";
+    if (v.equals("speak"))result+=" to";
     return result;
   }//returns complete, conjugated verb
 
