@@ -37,11 +37,11 @@ public class PlanB
   public static String buildSentence()
   {
     String sentence = "";
-    sentence += fullNoun(getWord(articles),getWord(nouns))+" ";
+    sentence += fullNoun(getWord(articles),getWord(nouns), "subject")+" ";
     sentence += fullVerb(getWord(verbs));
     //sentence += fullVerb("frown");
 
-    if(sentence.substring(sentence.length()-2).equals("at") || Math.random()>0.5)sentence+=" "+fullNoun(getWord(articles),getWord(nouns));
+    if(sentence.substring(sentence.length()-2).equals("at") || Math.random()>0.5)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
 
     return formatSentence(sentence);
   }//builds a sentence
@@ -63,13 +63,22 @@ public class PlanB
     return str.substring(0,1).toLowerCase().matches("[aeiou]");    
   }//ends isVowel
 
-  private static String fullNoun(String art, String n)
+  private static String fullNoun(String art, String n, String type)
   {
     String phrase = "";
-    if(art.equals("a")) phrase+=(isVowel(n))?"an":"a";
-    else phrase+=art;
-    //ADJECTIVES WILL GO HERE
-    return phrase+" "+n;
+    if(Math.random()*100>15)
+    {
+      if(art.equals("a")) phrase+=(isVowel(n))?"an":"a";
+      else phrase+=art;
+      //ADJECTIVES WILL GO HERE
+      return phrase+" "+n;
+    }
+    else
+    {
+      if(type.equals("subject")) return "it";
+      else return "them";
+      //To do: make conjugation match other possible pronouns (ex. "they") and plural nouns
+    }
   }//ends fullNoun method - changes A to An if neccessary, returns article+noun, when we want to add adjectives, they go here
 
   private static String fullVerb(String v)
