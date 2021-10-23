@@ -606,28 +606,17 @@ settlement
 metal	
 motion	
 adult	
-
-
-***************Stopped here*****************
-//https://www.wordexample.com/list/most-common-nouns-english
-
-
 sport	
 surprise	
 pension	
-factory	factories
 tape	
 flow	
 iron	
 trip	
 lane	
 pool	
-independence	
 hole	
-un	
-flat	
-content	
-pay	
+flat
 noise	
 combination	
 session	
@@ -636,30 +625,25 @@ fashion
 consumer	
 accommodation	
 temperature	
-mike	
 religion	
 author	
 nation	
-northern	
 sample	
-assistance	assistances
+assistance
 interpretation	
 aspect	
-display	displays
+display
 shoulder	
 agent	
-gallery	galleries
 republic	
 cancer	
 proposal	
 sequence	
-simon	
 ship	
 interview	
 vehicle	
-democracy	democracies
 improvement	
-involvement	involvements
+involvement
 general	
 enterprise	
 van	
@@ -670,14 +654,10 @@ channel
 impression	
 tone	
 sheet	
-pollution	
-bob	
-beauty	beauties
 square	
 vision	
 spot	
-distinction	
-brown	
+distinction		
 crowd	
 fuel	
 desk	
@@ -691,37 +671,27 @@ soil
 reader	
 shock	
 fruit	
-behalf	behalves
-deputy	deputies
-roof	roofs
+roof
 nose	
 steel	
-co	
 artist	
 graham	
 plate	
 song	
-maintenance	maintenances
+maintenance
 formation	
-grass	grasses
-spokesman	spokesmen
 ice	
 talk	
 program	
-link	
-ring	
+link
+ring
 expert	
 establishment	
 plastic	
 candidate	
 rail	
 passage	
-joe	
-parish	parishes
 ref	
-emergency	emergencies
-liability	liabilities
-identity	identities
 location	
 framework	
 strike	
@@ -731,62 +701,43 @@ lake
 household	
 approval	
 border	
-bottle	
+bottle
 bird	
 constitution	
-autumn	
 cat	
 agriculture	
-concentration	concentrations
+concentration
 guy	
-dress	dresses
 victim	
 mountain	
 editor	
 theme	
 error	
 loan	
-stress	stresses
-recovery	recoveries
-electricity	electricities
 recession	
-wealth	wealths
+wealth
 request	
-comparison	
-lewis	lewises
-white	
+comparison		
 walk	
-focus	foci
 chief	
 parent	
-sleep	
-mass	masses
-jane	
-bush	bushes
 foundation	
 bath	
 item	
 lifespan	
-lee	lees
 publication	
 decade	
-beach	beaches
 sugar	
 height	
-charity	charities
 writer	
 panel	
 struggle	
 dream	
 outcome	
-efficiency	efficiencies
-offence	offences
 resolution	
 reputation	
 specialist	
-taylor	taylors
 pub	
-co-operation	
 port	
 incident	
 representation	
@@ -801,12 +752,8 @@ advance
 empire	
 notion	
 mirror	
-delivery	deliveries
 chest	
-licence	licences
-frank	
 average	
-awareness	awarenesses
 travel	
 expansion	
 block	
@@ -814,41 +761,32 @@ alternative
 chancellor	
 meat	
 store	
-self	selves
 break	
-drama	dramas
+drama
 corporation	
-currency	currencies
 extension	
 convention	
 partnership	
 skill	
-furniture	furnitures
+furniture
 round	
 regime	
-inquiry	inquiries
-rugby	rugbies
-philosophy	philosophies
 scope	
 gate	
-minority	minorities
 intelligence	
 restaurant	
 consequence	
 mill	
 golf	
 retirement	
-priority	priorities
 plane	
 gun	
 gap	
 core	
 uncle	
 thatcher	
-fun	
 arrival	
-snow	
-no.	nos.
+snow
 command	
 abuse	
 limit	

@@ -5,23 +5,34 @@ import java.io.FileWriter;//used to save file
 
 public class PlanB
 {
+  public static String file = "Word Bank/nouns.txt";
+  public static ArrayList<String> nouns = new ArrayList<String>();
+    
   public static void main(/*String[] args*/)
   {
-    String file = "nouns.txt";
-    System.out.println("test");
+    
     try
     {
       Scanner fileReader = new Scanner(new File(file));
-      String word;
-      for(int i=0;i<(Math.random()*607+1);i++)
+      while(fileReader.hasNext())
       {
-        word = fileReader.nextLine();
-      }
-      System.out.println(word);
-    } catch (IOException e){}
+        nouns.add(fileReader.nextLine());
+      }//ends while file being read
+    }//ends try file stuff
+    catch (IOException e)
+    {
+      System.out.println("Something's wrong with the noun file.");
+    }//ends catch file errors
 
-  }
-}
+    System.out.println(getNoun());
+    
+  }//ends main
+
+  public static String getNoun()
+  {
+    return nouns.get((int)(Math.random()*nouns.size()));
+  }//ends getNoun() method
+}//ends PlanB class 
 
 //https://replit.com/talk/learn/Get-started-with-Web-Scraping/8930
 //https://replit.com/@jajoosam/quote-scraper-starter
