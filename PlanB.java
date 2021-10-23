@@ -39,7 +39,7 @@ public class PlanB
     String sentence = "";
     sentence += fullNoun(getWord(articles),getWord(nouns), "subject")+" ";
     sentence += fullVerb(getWord(verbs));
-    //sentence += fullVerb("speak");
+    //sentence += fullVerb("convey");
 
     if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.5)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
 
@@ -77,14 +77,14 @@ public class PlanB
     {
       if(type.equals("subject")) return "it";
       else return "them";
-      //To do: make conjugation match other possible pronouns (ex. "they") and plural nouns
+      //To do: make conjugation match other possible pronouns (ex.   "they") and plural nouns
     }
   }//ends fullNoun method - changes A to An if neccessary, returns article+noun, when we want to add adjectives, they go here
 
   private static String fullVerb(String v)
   {
     String result = v.substring(0,v.length()-1);
-    if(v.substring(v.length()-1).equals("y")&&!v.equals("convey")) result+="ies";
+    if(v.substring(v.length()-1).equals("y")&& (!v.equals("convey"))) result+="ies";
     else if(v.substring(v.length()-1).equals("s")) result+="es";
     else result+=v.substring(v.length()-1)+"s";
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
