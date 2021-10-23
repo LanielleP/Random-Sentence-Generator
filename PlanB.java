@@ -15,10 +15,16 @@ public class PlanB
     nouns = readFile("Word Bank/nouns.txt");
     verbs = readFile("Word Bank/verbs.txt");
 
-    //change "a" to "an" if necessary, punctuation
-    //if verb ends in "y" change to "ies"
-    String sentence = getWord(articles)+" "+getWord(nouns)+" "+getWord(verbs)+". ";
-    sentence = sentence.substring(0,1).toUpperCase()+sentence.substring(1);
+    String article = getWord(articles);
+    String subject = getWord(nouns);
+    String verb = getWord(verbs);
+    
+    if(article.equals("a") && isVowel(subject))article = "an";
+    if(verb.substring(verb.length()-1).equals("y"))verb = verb.substring(0,verb.length()-1)+"ies";
+    else verb+="s";
+
+    String sentence = article+" "+subject+" "+verb+". ";
+    sentence = sentence.substring(0,1).toUpperCase()+sentence.substring(1).toLowerCase();
 
     System.out.print(sentence);
   }//ends main
@@ -46,6 +52,12 @@ public class PlanB
   {
     return list.get((int)(Math.random()*list.size()));
   }//ends getNoun() method
+
+  private static boolean isVowel(String str)
+  {
+    return str.substring(0,1).toLowerCase().matches("[aeiou]");    
+  }//ends isVowel
+
 }//ends PlanB class 
 
 //https://replit.com/talk/learn/Get-started-with-Web-Scraping/8930
