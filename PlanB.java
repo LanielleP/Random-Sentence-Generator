@@ -5,32 +5,46 @@ import java.io.FileWriter;//used to save file
 
 public class PlanB
 {
-  public static String file = "Word Bank/nouns.txt";
-  public static ArrayList<String> nouns = new ArrayList<String>();
+  public static ArrayList<String> nouns;
+  public static ArrayList<String> verbs;
+  public static ArrayList<String> articles;
     
   public static void main(/*String[] args*/)
   {
+    articles = readFile("Word Bank/articles.txt");
+    nouns = readFile("Word Bank/nouns.txt");
+    verbs = readFile("Word Bank/verbs.txt");
+
+    //change "a" to "an" if necessary, punctuation
+    //if verb ends in "y" change to "ies"
+    String sentence = getWord(articles)+" "+getWord(nouns)+" "+getWord(verbs)+". ";
+    sentence = sentence.substring(0,1).toUpperCase()+sentence.substring(1);
+
+    System.out.print(sentence);
+  }//ends main
+
+  public static ArrayList<String> readFile(String file)
+  {
+    ArrayList<String> info = new ArrayList<String>();
     
     try
     {
       Scanner fileReader = new Scanner(new File(file));
-      while(fileReader.hasNext())
-      {
-        nouns.add(fileReader.nextLine());
-      }//ends while file being read
+      while(fileReader.hasNext()) info.add(fileReader.next());
+      fileReader.close();
     }//ends try file stuff
     catch (IOException e)
     {
-      System.out.println("Something's wrong with the noun file.");
+      System.out.println("Something's wrong with the file.");
     }//ends catch file errors
 
-    System.out.println(getNoun());
     
-  }//ends main
+    return info;
+  }
 
-  public static String getNoun()
+  public static String getWord(ArrayList<String> list)
   {
-    return nouns.get((int)(Math.random()*nouns.size()));
+    return list.get((int)(Math.random()*list.size()));
   }//ends getNoun() method
 }//ends PlanB class 
 
