@@ -20,3 +20,17 @@ STEP 1: Allow user to make own word bank
 STEP 2: Make a Complete Sentence
 
 STEP 3: Make a Story
+
+Classes and Methods Associated
+NounsAndAdjectives class
+  Works with Nouns, Articles, and Adjectives
+
+VerbsAndAdverbs class
+  Works with Verbs and Adverbs
+
+SentenceBuilder class
+  Works with constructing sentences
+    Pulls words from VerbsAndAdverbs and NounsAndAdjectives class to build sentence
+  Conjunctions
+  Preprosistional Phrases
+
