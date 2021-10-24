@@ -1,10 +1,9 @@
-import java.util.*;
 
-public class Test
+
+public class NounsAndAdjectives
 {
   public static void main(String[] args)
   {
     SentenceBuilder.main();
   }
 }
-
