@@ -31,6 +31,7 @@ VerbsAndAdverbs class
 SentenceBuilder class
   Works with constructing sentences
     Pulls words from VerbsAndAdverbs and NounsAndAdjectives class to build sentence
+    Break up Sentences into Dependent and Independent Clauses
   Conjunctions
   Preprosistional Phrases
 
