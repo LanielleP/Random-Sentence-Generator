@@ -34,6 +34,18 @@ public class SentenceBuilder
     return info;
   }
 
+  public static String indepdentClause()
+  {
+    String independent = "";
+    return independent;
+  }//Code to build Independent Clause
+
+  public static String dependentClause()
+  {
+    String dependent = "";
+    return dependent;
+  }//Code for Dependent Clause
+
   public static String buildSentence()
   {
     String sentence = "";
