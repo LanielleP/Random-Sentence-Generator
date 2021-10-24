@@ -12,6 +12,8 @@ STEP 2: make a complete sentence
       2d - Complex Sentence Structure (i.e. Dependent clause, Independent Clause (Combine two sentences with commas))
       2e - Semi-colons.
 
+      -add case for verbs that end in s -> add "es"
+
 STEP 3: make a story
 
 Manual
