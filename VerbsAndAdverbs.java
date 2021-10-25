@@ -48,7 +48,7 @@ public class VerbsAndAdverbs
     }//ends else
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
     if (v.equals("frown"))result+=" at";
-    if (v.equals("speak"))result+=" to";
+    if (v.equals("speak")||v.equals("respond"))result+=" to";
     //add "account for", but also fix the thing in the sentence generator that checks for a two letter word.
     return result;
   }//returns complete, conjugated verb
