@@ -15,7 +15,6 @@ child	children
 control	control
 society	societies
 community	communities
-south	south
 city	cities
 woman	women
 process	processes
