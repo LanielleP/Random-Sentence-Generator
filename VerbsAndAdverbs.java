@@ -43,7 +43,7 @@ public class VerbsAndAdverbs
       { 
         result+="es";
       }
-      else result+=v.substring(v.length()-1)+"s";
+      else result+="s";
     }//ends else
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
     if (v.equals("frown"))result+=" at";
