@@ -476,7 +476,7 @@ call
 output	
 note	
 procedure	
-theatre	
+theater	
 tour	
 recognition
 middle	
