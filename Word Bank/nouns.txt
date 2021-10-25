@@ -70,11 +70,9 @@ job
 action	
 management
 act	
-north	
 age	
 evidence
 idea
-west	
 support	
 moment	
 sense	
