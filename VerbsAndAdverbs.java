@@ -30,6 +30,7 @@ public class VerbsAndAdverbs
 
   public static String fullVerb(String v)
   {
+    v = v.toLowerCase();
     String result = v.substring(0,v.length()-1);
     if(v.substring(v.length()-1).equals("y")&& (!v.equals("convey"))) result+="ies";
     else 
@@ -48,6 +49,7 @@ public class VerbsAndAdverbs
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
     if (v.equals("frown"))result+=" at";
     if (v.equals("speak"))result+=" to";
+    //add "account for", but also fix the thing in the sentence generator that checks for a two letter word.
     return result;
   }//returns complete, conjugated verb
 

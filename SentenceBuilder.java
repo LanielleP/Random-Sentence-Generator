@@ -51,9 +51,9 @@ public class SentenceBuilder
     String sentence = "";
     sentence += fullNoun(getWord(articles),getWord(nouns), "subject")+" ";
     sentence += VerbsAndAdverbs.fullVerb(getWord(verbs));
-    //sentence += VerbsAndAdverbs.fullVerb("research");
+    //sentence += VerbsAndAdverbs.fullVerb("convey");
 
-    if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.5)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
+    if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.1)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
 
     return formatSentence(sentence);
   }//builds a sentence

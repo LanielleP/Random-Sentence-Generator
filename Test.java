@@ -4,7 +4,11 @@ public class Test
 {
   public static void main(String[] args)
   {
-    SentenceBuilder.main();
+    for(int i=0;i<10;i++)
+    {
+      SentenceBuilder.main();
+      System.out.println();
+    }//ends for
   }
 }
 
