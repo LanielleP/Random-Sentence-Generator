@@ -28,12 +28,23 @@ public class VerbsAndAdverbs
     verbs = readFile("Word Bank/verbs.txt");
   }//ends setUpLists method
 
-  private static String fullVerb(String v)
+  public static String fullVerb(String v)
   {
     String result = v.substring(0,v.length()-1);
     if(v.substring(v.length()-1).equals("y")&& (!v.equals("convey"))) result+="ies";
-    else if(v.substring(v.length()-1).equals("s")) result+="es";
-    else result+=v.substring(v.length()-1)+"s";
+    else 
+    {
+      result+=v.substring(v.length()-1);
+      if(v.substring(v.length()-1).equals("s")) 
+      {
+        result+="es";
+      }
+      else if(v.substring(v.length()-1).equals("h"))
+      { 
+        result+="es";
+      }
+      else result+=v.substring(v.length()-1)+"s";
+    }//ends else
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
     if (v.equals("frown"))result+=" at";
     if (v.equals("speak"))result+=" to";
