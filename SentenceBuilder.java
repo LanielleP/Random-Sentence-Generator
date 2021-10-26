@@ -50,10 +50,10 @@ public class SentenceBuilder
   {
     Scanner se = new Scanner(System.in);
     int tense = -1;
-    int valid = 0;
+    int valid = -1;
     while(valid == -1){
       System.out.println("Please choose 0 - past; 1 - present, 2 - future");
-      valid = Integer.valueOf(se.nextLine());   
+      tense = Integer.valueOf(se.nextLine());   
       if(tense == 0)
       {
         valid++;
