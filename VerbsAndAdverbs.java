@@ -28,7 +28,7 @@ public class VerbsAndAdverbs
     verbs = readFile("Word Bank/verbs.txt");
   }//ends setUpLists method
 
-  public static String fullVerb(String v)
+  public static String conjugateVerb(String v, int tense)
   {
     v = v.toLowerCase();
     String result = v.substring(0,v.length()-1);

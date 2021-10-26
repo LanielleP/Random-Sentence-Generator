@@ -46,12 +46,38 @@ public class SentenceBuilder
     return dependent;
   }//Code for Dependent Clause
 
+  public static int sentenceTense()
+  {
+    int tense = 0;
+    int valid = 0;
+
+    while(valid == 0){
+      if(tense == -1)
+      {
+        valid++;
+      }
+      else if (tense == 0)
+      {
+        valid++;
+      }
+      else if (tense == 1)
+      {
+        valid++;
+      }
+      else{
+        System.out.println("Unvalid Input");
+      }
+    }//ends while loop
+
+    return tense;
+  }//ends sentenceTense method
+
   public static String buildSentence()
   {
     String sentence = "";
     sentence += fullNoun(getWord(articles),getWord(nouns), "subject")+" ";
-    sentence += VerbsAndAdverbs.fullVerb(getWord(verbs));
-    //sentence += VerbsAndAdverbs.fullVerb("convey");
+    sentence += VerbsAndAdverbs.conjugateVerb(getWord(verbs));
+    //sentence += VerbsAndAdverbs.conjugateVerb("convey");
 
     if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.1)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
 
@@ -98,6 +124,6 @@ public class SentenceBuilder
     return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()+".";
   }//ends formatSentence - puts a capital letter and a period
 
-}//ends PlanB class 
+}//ends SentenceBuilder class 
 
 
