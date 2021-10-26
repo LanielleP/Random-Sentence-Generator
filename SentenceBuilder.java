@@ -52,7 +52,7 @@ public class SentenceBuilder
     int tense = -1;
     int valid = 0;
     while(valid == -1){
-      System.out.println("Please choose 0 - past; 1 - present, 2 - future")
+      System.out.println("Please choose 0 - past; 1 - present, 2 - future");
       valid = Integer.valueOf(se.nextLine());   
       if(tense == 0)
       {
