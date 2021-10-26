@@ -8,7 +8,7 @@ public class Test
     {
       SentenceBuilder.main();
       System.out.println();
-    }//ends for
-  }
-}
+    }//ends for loop
+  }//ends main method
+}//ends test class
 

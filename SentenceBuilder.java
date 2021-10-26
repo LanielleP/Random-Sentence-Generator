@@ -48,19 +48,21 @@ public class SentenceBuilder
 
   public static int sentenceTense()
   {
-    int tense = 0;
+    Scanner se = new Scanner(System.in);
+    int tense = -1;
     int valid = 0;
-
-    while(valid == 0){
-      if(tense == -1)
-      {
-        valid++;
-      }
-      else if (tense == 0)
+    while(valid == -1){
+      System.out.println("Please choose 0 - past; 1 - present, 2 - future")
+      valid = Integer.valueOf(se.nextLine());   
+      if(tense == 0)
       {
         valid++;
       }
       else if (tense == 1)
+      {
+        valid++;
+      }
+      else if (tense == 2)
       {
         valid++;
       }
