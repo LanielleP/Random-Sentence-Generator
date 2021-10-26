@@ -78,7 +78,7 @@ public class SentenceBuilder
   {
     String sentence = "";
     sentence += fullNoun(getWord(articles),getWord(nouns), "subject")+" ";
-    sentence += VerbsAndAdverbs.conjugateVerb(getWord(verbs));
+    sentence += VerbsAndAdverbs.conjugateVerb(getWord(verbs), 0);
     //sentence += VerbsAndAdverbs.conjugateVerb("convey");
 
     if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.1)sentence+=" "+fullNoun(getWord(articles),getWord(nouns),"object");
