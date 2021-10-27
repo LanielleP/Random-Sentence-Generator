@@ -1,72 +1,42 @@
 import java.util.*;
 import java.io.IOException;//for file issues
 import java.io.File;//used to read file
-import java.io.FileWriter;//used to save file
 
-public class VerbsAndAdverbs 
+public class VerbsAndAdverbs
 {
-  public static ArrayList<String> verbs;
-  public static ArrayList<String> adverbs;
-
-  public static void main(String[] args) 
+  private static ArrayList<String> verbs;
+  private static ArrayList<String> adverbs;//not used yet
+  
+  public VerbsAndAdverbs()
   {
-    setUpLists();
-  }
-
-  private static void setUpLists() 
+    verbs = Test.readFile("Word Bank/verbs.txt");
+    adverbs = Test.readFile("Word Bank/adverbs.txt");    
+  }//ends constructor
+   
+  public static String conjugateVerb(/*int tense*/)
   {
-    verbs = readFile("Word Bank/verbs.txt");
-  }// ends setUpLists method
-
-  public static ArrayList<String> readFile(String file) 
-  {
-    ArrayList<String> info = new ArrayList<String>();
-
-    try 
-    {
-      Scanner fileReader = new Scanner(new File(file));
-      while (fileReader.hasNext())
-        info.add(fileReader.next());
-      fileReader.close();
-    } 
-    catch (IOException e) 
-    {
-      System.out.println("Something's wrong with the file.");
-    } // ends catch file errors
-
-    return info;
-  }
-
-  public static String conjugateVerb(String v, int tense) 
-  {
+    String v = Test.getWord(verbs);
     v = v.toLowerCase();
-    String result = v.substring(0, v.length() - 1);
-    if (v.substring(v.length() - 1).equals("y") && (!v.equals("convey")))
-      result += "ies";
+    String result = v.substring(0,v.length()-1);
+    if(v.substring(v.length()-1).equals("y")&& (!v.equals("convey"))) result+="ies";
     else 
     {
-      result += v.substring(v.length() - 1);
-      if (v.substring(v.length() - 1).equals("s")) 
+      result+=v.substring(v.length()-1);
+      if(v.substring(v.length()-1).equals("s")) 
       {
-        result += "es";
-      } 
-      else if (v.substring(v.length() - 1).equals("h")) 
-      {
-        result += "es";
-      } else
-        result += "s";
-    } // ends else
-      // ADVERBS and any other words that need to follow the verb (ex. "at" for the
-      // verb "looked at") WILL GO HERE
-    if (v.equals("frown"))
-      result += " at";
-    if (v.equals("speak") || v.equals("respond"))
-      result += " to";
-    // add "account for", but also fix the thing in the sentence generator that
-    // checks for a two letter word.
+        result+="es";
+      }
+      else if(v.substring(v.length()-1).equals("h"))
+      { 
+        result+="es";
+      }
+      else result+="s";
+    }//ends else
+    //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
+    if (v.equals("frown"))result+=" at";
+    if (v.equals("speak")||v.equals("respond"))result+=" to";
+    //add "account for", but also fix the thing in the sentence generator that checks for a two letter word.
     return result;
-  }// returns complete, conjugated verb
+  }//returns complete, conjugated verb
 
-  
-
-}
+}//ends verb class
