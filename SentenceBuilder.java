@@ -48,6 +48,36 @@ public class SentenceBuilder
     return tense;
   }//ends sentenceTense method
 
+  /*public static String getSentence()
+  {
+    String sentence = "";
+    sentence += Subject.getSubject()+" ";
+    sentence += VerbsAndAdverbs.conjugateVerb();
+    //sentence += VerbsAndAdverbs.conjugateVerb("convey");
+
+    if(sentence.substring(sentence.length()-3,sentence.length()-2).equals(" ") || Math.random()>0.1)sentence+=" "+Object.getObject();
+
+    return formatSentence(sentence);
+  }//builds a sentence*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //this thing is what needs the linked list
+  
+  
+  
+  
+  
   public static String getSentence()
   {
     String sentence = "";
@@ -59,6 +89,29 @@ public class SentenceBuilder
 
     return formatSentence(sentence);
   }//builds a sentence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   private static String formatSentence(String s)
   {    
