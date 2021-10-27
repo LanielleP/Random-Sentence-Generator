@@ -19,6 +19,32 @@ public class ParagraphBuilder{
     }//ends try catch
   }//ends file creation method
 
+public static void userInputFile(String[] args){
+  Scanner userWrites = new Scanner(System.in);
+  boolean input = true;
+  Scanner userCont = new Scanner(System.in);
+  int stop = 0;
+  try 
+    {
+      FileWriter UserWriter = new FileWriter("UserInput.txt");
+        while (input = true){
+        UserWriter.write(userWrites.nextLine());
+        System.out.println("Stop = 1");
+        stop = Integer.valueOf(userCont.nextLine());  
+          if(stop == 1){
+            input = false;
+          }
+        }//ends while loop when user wants to stop adding into the file.
+        UserWriter.close();
+      System.out.println("Successfully wrote to the file.");
+    }//ends try
+    catch (IOException e) 
+    {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }//ends catch
+}//ends userInputFile method
+
 public static int mode()
   {
     Scanner userMode = new Scanner(System.in);
