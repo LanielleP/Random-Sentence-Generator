@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Subject
+public class Subject//sentient?
 {
   private static ArrayList<String> nouns;
   private static ArrayList<String> articles;

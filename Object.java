@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Object
+public class Object //non-sentient?
 {
   private static ArrayList<String> nouns;
   private static ArrayList<String> articles;

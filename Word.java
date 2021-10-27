@@ -20,7 +20,7 @@ public class Word
       case "adverb":
         //Adverb();
         break;
-      case "article";
+      case "article":
         //Article();
         break;
       case "conjunction":

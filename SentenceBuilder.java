@@ -65,6 +65,11 @@ public class SentenceBuilder
     return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()+".";
   }//ends formatSentence - puts a capital letter and a period
 
-  //make alternate formatSentence that takes in an ArrayList
+  private static String formatSentence(ArrayList list)
+  {    
+    String s="";
+    for(int i=0; i<list.size(); i++) s+=list.get(i)+"";
+    return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()+".";
+  }//ends formatSentence - puts a capital letter and a period
 
 }//ends SentenceBuilder class 
