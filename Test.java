@@ -49,3 +49,4 @@ public class Test
     return str.substring(0,1).toLowerCase().matches("[aeiou]");    
   }//ends isVowel
 }//ends test class
+
