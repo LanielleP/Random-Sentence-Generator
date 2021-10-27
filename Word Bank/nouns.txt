@@ -490,7 +490,6 @@ threat
 element	
 conflict	
 notice	
-bottom	
 finance	
 fund	
 file	
@@ -551,7 +550,6 @@ murder
 aim	
 flight	
 conclusion	
-drug	
 tradition	
 pleasure	
 connection	
