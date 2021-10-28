@@ -7,7 +7,7 @@ public class ParagraphBuilder
 {
 
   /*
-  Description: creates a UserWordBank.txt
+  Description: Creates txt file for program to store paragraphs
   *Pre: String[] args
   *Param: String[] args
   *Post: None
@@ -17,15 +17,16 @@ public class ParagraphBuilder
   {
     try 
     {
-      File ownWordBank = new File("UserWordBank.txt");
-      if (ownWordBank.createNewFile()) 
+      File userProgramParagraph = new File("userProgramParagraph.txt");
+      if (userProgramParagraph.createNewFile()) 
       {
-        System.out.println("File created: " + ownWordBank.getName());
+        System.out.println("File created: " + userProgramParagraph.getName());
       } 
       else 
       {
         System.out.println("File already exists.");
       }
+
     } 
     catch (IOException e) 
     {
@@ -35,7 +36,7 @@ public class ParagraphBuilder
   }// ends file creation method
 
   /*
-  Description: User inputs words in their own txt file
+  Description: User inputs their own word bank in their own txt file
   *Pre: String[] args
   *Param: String[] args
   *Post: None
@@ -49,18 +50,58 @@ public class ParagraphBuilder
     int stop = 0;
     try 
     {
-      FileWriter UserWriter = new FileWriter("UserInput.txt");
+      FileWriter UserNounWriter = new FileWriter("ownNounWordBank.txt"); //user noun bank
       while (input = true) 
       {
-        UserWriter.write(userWrites.nextLine());
+        UserNounWriter.write(userWrites.nextLine());
         System.out.println("Stop = 1");
         stop = Integer.valueOf(userCont.nextLine());
         if (stop == 1) {
           input = false;
         }
       } // ends while loop when user wants to stop adding into the file.
-      UserWriter.close();
+      UserNounWriter.close();
       System.out.println("Successfully wrote to the file.");
+
+      FileWriter UserAdjWriter = new FileWriter("ownAdjWordBank.txt"); //user adjective bank
+      while (input = true) 
+      {
+        UserAdjWriter.write(userWrites.nextLine());
+        System.out.println("Stop = 1");
+        stop = Integer.valueOf(userCont.nextLine());
+        if (stop == 1) {
+          input = false;
+        }
+      } // ends while loop when user wants to stop adding into the file.
+      UserAdjWriter.close();
+      System.out.println("Successfully wrote to the file.");
+
+      FileWriter UserVerbWriter = new FileWriter("ownVerbWordBank.txt"); //user verb bank
+      while (input = true) 
+      {
+        UserVerbWriter.write(userWrites.nextLine());
+        System.out.println("Stop = 1");
+        stop = Integer.valueOf(userCont.nextLine());
+        if (stop == 1) {
+          input = false;
+        }
+      } // ends while loop when user wants to stop adding into the file.
+      UserVerbWriter.close();
+      System.out.println("Successfully wrote to the file.");
+
+      FileWriter UserAdverbWriter = new FileWriter("ownAdverbWordBank.txt"); //user adverb bank
+      while (input = true) 
+      {
+        UserAdverbWriter.write(userWrites.nextLine());
+        System.out.println("Stop = 1");
+        stop = Integer.valueOf(userCont.nextLine());
+        if (stop == 1) {
+          input = false;
+        }
+      } // ends while loop when user wants to stop adding into the file.
+      UserAdverbWriter.close();
+      System.out.println("Successfully wrote to the file.");
+
     } // ends try
     catch (IOException e) 
     {
