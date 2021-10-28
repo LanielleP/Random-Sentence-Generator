@@ -6,6 +6,13 @@ public class Object //non-sentient?
   private static ArrayList<String> articles;
   private static ArrayList<String> adjectives;//not used yet  
   
+  /*
+  Description: Object Constructor
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: None
+  */
   public Object()
   {
     nouns = Test.readFile("Word Bank/nouns.txt");
@@ -13,6 +20,13 @@ public class Object //non-sentient?
     //adjectives = Test.readFile("Word Bank/adjectives.txt");
   }//ends constructor
   
+  /*
+  Description: gets Object
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: object
+  */
   public static String getObject()
   {
     String art = Test.getWord(articles);

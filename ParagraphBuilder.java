@@ -6,6 +6,13 @@ import java.io.FileWriter;//used to save file
 public class ParagraphBuilder 
 {
 
+  /*
+  Description: creates a UserWordBank.txt
+  *Pre: String[] args
+  *Param: String[] args
+  *Post: None
+  *Return: None
+  */
   public static void createFile(String[] args) 
   {
     try 
@@ -27,6 +34,13 @@ public class ParagraphBuilder
     } // ends try catch
   }// ends file creation method
 
+  /*
+  Description: User inputs words in their own txt file
+  *Pre: String[] args
+  *Param: String[] args
+  *Post: None
+  *Return: None
+  */
   public static void userInputFile(String[] args) 
   {
     Scanner userWrites = new Scanner(System.in);
@@ -55,6 +69,13 @@ public class ParagraphBuilder
     } // ends catch
   }// ends userInputFile method
 
+  /*
+  Description: Mode method - Allows user to choose whether they want to take over the program, or let the program do its own thing. Manual - User chooses to add or not add sentences into the paragraph. Autonomous - User's paragraph is formed by program.
+  *Pre: None
+  *Param: None
+  *Post: 
+  *Return: int mode
+  */
   public static int mode() 
   {
     Scanner userMode = new Scanner(System.in);
@@ -74,4 +95,5 @@ public class ParagraphBuilder
     } // ends while loop
     return mode;
   }// User takes control or srg is autonomous
+
 }// ends ParagraphBuilder class

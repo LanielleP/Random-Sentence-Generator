@@ -15,11 +15,13 @@ public class Test
     for(int i=0;i<10;i++) System.out.println(SentenceBuilder.getSentence());
   }//ends main method
 
-  /***
-   * returns the input from a given file as an ArrayList
-   * @param String file
-   * @returns ArrayList<String>
-   */
+  /*
+  Description: Returns the input from a given file as an ArrayList
+  *Pre: String file
+  *Param: String file
+  *Post: None
+  *Return: ArrayList<String> info
+  */
   public static ArrayList<String> readFile(String file)
   {
     ArrayList<String> info = new ArrayList<String>();
@@ -35,15 +37,32 @@ public class Test
     return info;
   }//ends readFile
 
+  /*
+  Description: Gets word from file
+  *Pre: ArrayList<String> list
+  *Param: ArrayList<String> list
+  *Post: None
+  *Return: String word
+  */
   public static String getWord(ArrayList<String> list)
   {
-    try{ return list.get((int)(Math.random()*list.size()));}
+    try
+    { 
+      return list.get((int)(Math.random()*list.size()));
+    }
     catch(NullPointerException e)
     {
       return "_";
     }//ends catch
   }//ends getNoun() method
 
+  /*
+  Description: Checks whether noun starts with a vowel.
+  *Pre: String str
+  *Param: String str
+  *Post: None
+  *Return: boolean vowel
+  */
   public static boolean isVowel(String str)
   {
     return str.substring(0,1).toLowerCase().matches("[aeiou]");    

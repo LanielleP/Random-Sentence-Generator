@@ -6,6 +6,14 @@ public class Subject//sentient?
   private static ArrayList<String> articles;
   private static ArrayList<String> adjectives;//not used yet  
   
+
+  /*
+  Description: Subject Constructor
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: None
+  */
   public Subject()
   {
     nouns = Test.readFile("Word Bank/nouns.txt");
@@ -13,6 +21,13 @@ public class Subject//sentient?
     //adjectives = Test.readFile("Word Bank/adjectives.txt");
   }//ends constructor
   
+  /*
+  Description: Gets the subject
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: String subject
+  */
   public static String getSubject(/*String art, String n*/)
   {
     String art = Test.getWord(articles);

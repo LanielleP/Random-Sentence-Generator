@@ -7,12 +7,26 @@ public class VerbsAndAdverbs
   private static ArrayList<String> verbs;
   private static ArrayList<String> adverbs;//not used yet
   
+  /*
+  Description: VerbsAndAdverbs constructor
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: None
+  */
   public VerbsAndAdverbs()
   {
     verbs = Test.readFile("Word Bank/verbs.txt");
     adverbs = Test.readFile("Word Bank/adverbs.txt");    
   }//ends constructor
    
+  /*
+  Description: Conjugates verb
+  *Pre: int tense
+  *Param: int tense
+  *Post: None
+  *Return: String conjugated verb
+  */
   public static String conjugateVerb(/*int tense*/)
   {
     String v = Test.getWord(verbs);

@@ -8,18 +8,39 @@ public class SentenceBuilder
   public static ArrayList<String> prepositionalPhrases;//not used yet
   public static ArrayList<String> conjunctions;//not used yet
 
+  /*
+  Description: This is the independent clause
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: String independentClause
+  */
   private static String indepdentClause()
   {
     String independent = "";
     return independent;
   }//Code to build Independent Clause
 
+  /*
+  Description: This is the dependent clause 
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: String dependentClause
+  */
   private static String dependentClause()
   {
     String dependent = "";
     return dependent;
   }//Code for Dependent Clause
 
+  /*
+  Description: User chooses the tense to which they want their sentence to be in.
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: int tense
+  */
   public static int sentenceTense()
   {
     Scanner se = new Scanner(System.in);
@@ -47,6 +68,8 @@ public class SentenceBuilder
 
     return tense;
   }//ends sentenceTense method
+
+
 
   /*public static String getSentence()
   {
@@ -77,7 +100,13 @@ public class SentenceBuilder
   
   
   
-  
+  /*
+  Description: Builds the actual sentence
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: String formatSentence(sentence)
+  */
   public static String getSentence()
   {
     String sentence = "";
