@@ -12,10 +12,10 @@ public class ParagraphBuilder
   *Param: String[] args
   *Post: None
   *Return: None
-  */
+  */  	
   public static void createFile(String[] args) 
   {
-    try 
+  try 
     {
       File userProgramParagraph = new File("userProgramParagraph.txt");
       if (userProgramParagraph.createNewFile()) 
