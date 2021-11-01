@@ -16,8 +16,8 @@ public class VerbsAndAdverbs
   */
   public VerbsAndAdverbs()
   {
-    verbs = Test.readFile("Word Bank/verbs.txt");
-    adverbs = Test.readFile("Word Bank/adverbs.txt");    
+    verbs = UsefulMethods.readFile("Word Bank/verbs.txt");
+    adverbs = UsefulMethods.readFile("Word Bank/adverbs.txt");    
   }//ends constructor
    
   /*
@@ -29,7 +29,7 @@ public class VerbsAndAdverbs
   */
   public static String conjugateVerb(/*int tense*/)
   {
-    String v = Test.getWord(verbs);
+    String v = UsefulMethods.getWord(verbs);
     v = v.toLowerCase();
     String result = v.substring(0,v.length()-1);
     if(v.substring(v.length()-1).equals("y")&& (!v.equals("convey"))) result+="ies";

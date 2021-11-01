@@ -15,9 +15,9 @@ public class Object //non-sentient?
   */
   public Object()
   {
-    nouns = Test.readFile("Word Bank/nouns.txt");
-    articles = Test.readFile("Word Bank/articles.txt");
-    //adjectives = Test.readFile("Word Bank/adjectives.txt");
+    nouns = UsefulMethods.readFile("Word Bank/nouns.txt");
+    articles = UsefulMethods.readFile("Word Bank/articles.txt");
+    //adjectives = UsefulMethods.readFile("Word Bank/adjectives.txt");
   }//ends constructor
   
   /*
@@ -29,12 +29,12 @@ public class Object //non-sentient?
   */
   public static String getObject()
   {
-    String art = Test.getWord(articles);
-    String n = Test.getWord(nouns);
+    String art = UsefulMethods.getWord(articles);
+    String n = UsefulMethods.getWord(nouns);
     String phrase = "";
     if(Math.random()*100>15)
     {
-      if(art.equals("a")) phrase+=(Test.isVowel(n))?"an":"a";
+      if(art.equals("a")) phrase+=(UsefulMethods.isVowel(n))?"an":"a";
       else phrase+=art;
       //ADJECTIVES WILL GO HERE
       return phrase+" "+n;

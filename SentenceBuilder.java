@@ -83,23 +83,9 @@ public class SentenceBuilder
     return formatSentence(sentence);
   }//builds a sentence*/
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  //this thing is what needs the linked list
-  
-  
-  
-  
+
+
+
   /*
   Description: Builds the actual sentence
   *Pre: None
@@ -107,7 +93,7 @@ public class SentenceBuilder
   *Post: None
   *Return: String formatSentence(sentence)
   */
-  public static String getSentence()
+  /*public static String getSentence()
   {
     String sentence = "";
     sentence += Subject.getSubject()+" ";
@@ -118,27 +104,31 @@ public class SentenceBuilder
 
     return formatSentence(sentence);
   }//builds a sentence
+  THIS IS THE VERSION WITHOUT A LINKED LIST*/
 
 
 
+/*
+  Description: Builds the actual sentence
+  *Pre: None
+  *Param: None
+  *Post: None
+  *Return: String formatSentence(sentence)
+  */
+  public static String getSentence()
+  {
+    LinkedList<String> test = new LinkedList<String>();
+    test.add((String)(Subject.getSubject()));
+    test.add((String)(VerbsAndAdverbs.conjugateVerb()));
+    //test.add((String)(VerbsAndAdverbs.conjugateVerb("convey")));
+    
+    if(test.getLast().length()<3 || Math.random()>0.1)
+    {
+      test.add((String)(Object.getObject()));
+    }//ends if
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return formatSentence(test);
+  }//builds a sentenceLinkedList<String> test = new LinkedList<String>();
 
 
 
@@ -147,11 +137,17 @@ public class SentenceBuilder
     return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()+".";
   }//ends formatSentence - puts a capital letter and a period
 
-  private static String formatSentence(LinkedList list)
+  private static String formatSentence(LinkedList<String> list)
   {    
     String s="";
-    for(int i=0; i<list.size(); i++) s+=list.get(i)+"";
-    return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()+".";
+    for(int i=0; i<list.size(); i++)
+    {
+       s+=list.get(i)+" ";
+    }
+    return s.substring(0,1).toUpperCase()+s.substring(1,s.length()-1).toLowerCase()+".";
+
+    //list.getFirst();
+    //list.remove(0);
   }//ends formatSentence - puts a capital letter and a period
 
 }//ends SentenceBuilder class 
