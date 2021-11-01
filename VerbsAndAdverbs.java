@@ -16,8 +16,8 @@ public class VerbsAndAdverbs
   */
   public VerbsAndAdverbs()
   {
-    verbs = UsefulMethods.readFile("Word Bank/verbs.txt");
-    adverbs = UsefulMethods.readFile("Word Bank/adverbs.txt");    
+    verbs = UsefulMethods.readFile("Word Bank/verbs.txt","verb");
+    adverbs = UsefulMethods.readFile("Word Bank/adverbs.txt","adverb");    
   }//ends constructor
    
   /*

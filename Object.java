@@ -15,9 +15,9 @@ public class Object //non-sentient?
   */
   public Object()
   {
-    nouns = UsefulMethods.readFile("Word Bank/nouns.txt");
-    articles = UsefulMethods.readFile("Word Bank/articles.txt");
-    //adjectives = UsefulMethods.readFile("Word Bank/adjectives.txt");
+    nouns = UsefulMethods.readFile("Word Bank/nouns.txt","noun");
+    articles = UsefulMethods.readFile("Word Bank/articles.txt","article");
+    //adjectives = UsefulMethods.readFile("Word Bank/adjectives.txt","adjective");
   }//ends constructor
   
   /*

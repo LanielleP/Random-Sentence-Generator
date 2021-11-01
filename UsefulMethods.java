@@ -11,15 +11,18 @@ public class UsefulMethods
   *Pre: String file
   *Param: String file
   *Post: None
-  *Return: LinkedList<String> info
+  *Return: LinkedList<Word> info
   */
-  public static LinkedList<String> readFile(String file)
+  public static LinkedList<Word> readFile(String file, String type)
   {
-    LinkedList<String> info = new LinkedList<String>();
+    LinkedList<Word> info = new LinkedList<Word>();
     
     try{
       Scanner fileReader = new Scanner(new File(file));
-      while(fileReader.hasNext()) info.add(fileReader.next());
+      while(fileReader.hasNext())
+      {
+        info.add(new Word(fileReader.next(),type));
+      }//ends while
       fileReader.close();
     }catch (IOException e){
       System.out.println("Something's wrong with the file.");
@@ -30,12 +33,12 @@ public class UsefulMethods
 
   /*
   Description: Gets word from file
-  *Pre: LinkedList<String> list
-  *Param: LinkedList<String> list
+  *Pre: LinkedList<Word> list
+  *Param: LinkedList<Word> list
   *Post: None
   *Return: String word
   */
-  public static String getWord(LinkedList<String> list)
+  public static Word getWord(LinkedList<Word> list)
   {
     try
     { 
@@ -43,7 +46,7 @@ public class UsefulMethods
     }
     catch(NullPointerException e)
     {
-      return "_";
+      return new Word("n/a","n/a");
     }//ends catch
   }//ends getNoun() method
 

@@ -1,5 +1,7 @@
+WEBSCRAPING INFO AND POSSIBLE SOURCES:
 https://replit.com/talk/learn/Get-started-with-Web-Scraping/8930
 https://replit.com/@jajoosam/quote-scraper-starter
+    https://www.randomwordgenerator.org/Word/generate2/word_type/noun/quantity/2
 
 
 Autonomy
@@ -37,3 +39,10 @@ SentenceBuilder class
   Conjunctions
   Preprosistional Phrases
 
+Pain:
+  - compound verbs
+  - "is"
+  - tenses
+  - inserting adjectives and adverbs
+  - questions 
+  - using verbs as nouns (gerunds)
