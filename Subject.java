@@ -2,9 +2,9 @@ import java.util.*;
 
 public class Subject//sentient?
 {
-  private static LinkedList<String> nouns;
-  private static LinkedList<String> articles;
-  private static LinkedList<String> adjectives;//not used yet  
+  private static LinkedList<Word> nouns;
+  private static LinkedList<Word> articles;
+  private static LinkedList<Word> adjectives;//not used yet  
   
 
   /*
@@ -30,12 +30,12 @@ public class Subject//sentient?
   */
   public static String getSubject(/*String art, String n*/)
   {
-    String art = UsefulMethods.getWord(articles);
-    String n = UsefulMethods.getWord(nouns);
+    Word art = UsefulMethods.getWord(articles);
+    Word n = UsefulMethods.getWord(nouns);
     String phrase = "";
     if(Math.random()*100>15)
     {
-      if(art.equals("a")) phrase+=(UsefulMethods.isVowel(n))?"an":"a";
+      if(art.equals("a")) phrase+=(UsefulMethods.isVowel(n.toString()))?"an":"a";
       else phrase+=art;
       //ADJECTIVES WILL GO HERE
       return phrase+" "+n;

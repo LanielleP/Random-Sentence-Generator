@@ -1,6 +1,6 @@
 public class Word
 {
-  private String word;
+  public String word;//make a setter later
   private String type;
 
   /*

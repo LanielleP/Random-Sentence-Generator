@@ -4,8 +4,8 @@ import java.io.File;//used to read file
 
 public class VerbsAndAdverbs
 {
-  private static LinkedList<String> verbs;
-  private static LinkedList<String> adverbs;//not used yet
+  private static LinkedList<Word> verbs;
+  private static LinkedList<Word> adverbs;//not used yet
   
   /*
   Description: VerbsAndAdverbs constructor
@@ -29,26 +29,26 @@ public class VerbsAndAdverbs
   */
   public static String conjugateVerb(/*int tense*/)
   {
-    String v = UsefulMethods.getWord(verbs);
-    v = v.toLowerCase();
-    String result = v.substring(0,v.length()-1);
-    if(v.substring(v.length()-1).equals("y")&& (!v.equals("convey"))) result+="ies";
+    Word v = UsefulMethods.getWord(verbs);
+    v.word = v.word.toLowerCase();
+    String result = v.word.substring(0,v.word.length()-1);
+    if(v.word.substring(v.word.length()-1).equals("y")&& (!v.word.equals("convey"))) result+="ies";
     else 
     {
-      result+=v.substring(v.length()-1);
-      if(v.substring(v.length()-1).equals("s")) 
+      result+=v.word.substring(v.word.length()-1);
+      if(v.word.substring(v.word.length()-1).equals("s")) 
       {
         result+="es";
       }
-      else if(v.substring(v.length()-1).equals("h"))
+      else if(v.word.substring(v.word.length()-1).equals("h"))
       { 
         result+="es";
       }
       else result+="s";
     }//ends else
     //ADVERBS and any other words that need to follow the verb (ex. "at" for the verb "looked at") WILL GO HERE
-    if (v.equals("frown"))result+=" at";
-    if (v.equals("speak")||v.equals("respond"))result+=" to";
+    if (v.word.equals("frown"))result+=" at";
+    if (v.word.equals("speak")||v.word.equals("respond"))result+=" to";
     //add "account for", but also fix the thing in the sentence generator that checks for a two letter word.
     return result;
   }//returns complete, conjugated verb
