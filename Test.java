@@ -16,15 +16,15 @@ public class Test
   }//ends main method
 
   /*
-  Description: Returns the input from a given file as an ArrayList
+  Description: Returns the input from a given file as an LinkedList
   *Pre: String file
   *Param: String file
   *Post: None
-  *Return: ArrayList<String> info
+  *Return: LinkedList<String> info
   */
-  public static ArrayList<String> readFile(String file)
+  public static LinkedList<String> readFile(String file)
   {
-    ArrayList<String> info = new ArrayList<String>();
+    LinkedList<String> info = new LinkedList<String>();
     
     try{
       Scanner fileReader = new Scanner(new File(file));
@@ -39,12 +39,12 @@ public class Test
 
   /*
   Description: Gets word from file
-  *Pre: ArrayList<String> list
-  *Param: ArrayList<String> list
+  *Pre: LinkedList<String> list
+  *Param: LinkedList<String> list
   *Post: None
   *Return: String word
   */
-  public static String getWord(ArrayList<String> list)
+  public static String getWord(LinkedList<String> list)
   {
     try
     { 

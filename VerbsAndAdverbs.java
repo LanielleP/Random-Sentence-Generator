@@ -4,8 +4,8 @@ import java.io.File;//used to read file
 
 public class VerbsAndAdverbs
 {
-  private static ArrayList<String> verbs;
-  private static ArrayList<String> adverbs;//not used yet
+  private static LinkedList<String> verbs;
+  private static LinkedList<String> adverbs;//not used yet
   
   /*
   Description: VerbsAndAdverbs constructor

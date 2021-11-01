@@ -2,9 +2,9 @@ import java.util.*;
 
 public class Object //non-sentient?
 {
-  private static ArrayList<String> nouns;
-  private static ArrayList<String> articles;
-  private static ArrayList<String> adjectives;//not used yet  
+  private static LinkedList<String> nouns;
+  private static LinkedList<String> articles;
+  private static LinkedList<String> adjectives;//not used yet  
   
   /*
   Description: Object Constructor

@@ -5,8 +5,8 @@ import java.io.FileWriter;//used to save file
 
 public class SentenceBuilder
 {
-  public static ArrayList<String> prepositionalPhrases;//not used yet
-  public static ArrayList<String> conjunctions;//not used yet
+  public static LinkedList<String> prepositionalPhrases;//not used yet
+  public static LinkedList<String> conjunctions;//not used yet
 
   /*
   Description: This is the independent clause
@@ -147,7 +147,7 @@ public class SentenceBuilder
     return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()+".";
   }//ends formatSentence - puts a capital letter and a period
 
-  private static String formatSentence(ArrayList list)
+  private static String formatSentence(LinkedList list)
   {    
     String s="";
     for(int i=0; i<list.size(); i++) s+=list.get(i)+"";
