@@ -3,7 +3,7 @@ speak
 frown
 accelerate
 accomplish
-account for
+account
 achieve
 acquire
 activate
